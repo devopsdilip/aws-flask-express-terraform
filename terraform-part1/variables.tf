@@ -1,15 +1,21 @@
 variable "aws_region" {
-  default = "ap-south-1"
+  description = "AWS Region"
+  type        = string
+  default     = "ap-south-1"
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  description = "EC2 Instance Type"
+  type        = string
+  default     = "t2.micro"
 }
 
 variable "key_name" {
-  description = "ibbu"
+  description = "AWS EC2 Key Pair Name"
+  type        = string
 }
 
 variable "ami_id" {
-  description = "ami-01a00762f46d584a1"
+  description = "Ubuntu AMI ID"
+  type        = string
 }
